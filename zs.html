@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+				a:hover{background-color: lightgrey;}
+				a{text-decoration: none; width: 100px; height: 40px; line-height: 40px; border-radius: 15px; background-color: darkgrey;text-align: center;}
+				*{margin: 0px auto; padding: 0px;}
+				section{width: 1000px; height: 600px; background: url(images/ppwh_bg.jpg);padding: 50px;}
+				img{height: 400px; position: relative;}
+				aside{position: relative; width: 100px; height: 400px; margin-top: 100px;}
+				li{overflow: hidden; list-style: none;width: 100px; height: 400px; position: absolute;transform-origin:bottom; background: black; transition: all 2s ease-in-out; border: #FFA500 1px solid;
+				 border-radius: 0px 0px 15px 15px; box-shadow: 15px -15px 15px rgba(0,0,0,.2);}
+				aside:hover li:nth-of-type(1){transform: rotate(-90deg);    box-shadow: 15px 20px 15px #000000;}/* 还他妈可以这么写 hover父元素，子元素变化写后面 */
+				aside:hover li:nth-of-type(2){transform: rotate(-67.5deg);  box-shadow: 15px 15px 15px #000000;}
+				aside:hover li:nth-of-type(3){transform: rotate(-45deg);    box-shadow: 15px -0px 15px #000000;}
+				aside:hover li:nth-of-type(4){transform: rotate(-22.50deg); box-shadow: 15px -15px 15px #000000;}
+				aside:hover li:nth-of-type(5){transform: rotate(0deg);      box-shadow: 15px -20px 15px #000000;}
+				aside:hover li:nth-of-type(6){transform: rotate(22.5deg);   box-shadow: 15px -20px 15px #000000;}
+				aside:hover li:nth-of-type(7){transform: rotate(45deg);     box-shadow: 0px -20px 15px #000000;}
+				aside:hover li:nth-of-type(8){transform: rotate(67.5deg);   box-shadow: -15px -15px 15px #000000;}
+				aside:hover li:nth-of-type(9){transform: rotate(90deg);     box-shadow: -15px -15px 15px #000000;}
+				li:nth-child(1) img{left: -70px;}
+				li:nth-child(2) img{left: -230px;}
+				li:nth-child(3) img{left: -340px;}
+				li:nth-child(4) img{left: -70px;}
+				li:nth-child(5) img{left: -240px;}
+				li:nth-child(6) img{left: -240px;}
+				li:nth-child(7) img{left: -70px;}
+				li:nth-child(8) img{left: -100px;}
+				li:nth-child(9) img{left: -320px;}
+			</style>
+		</head>
+		<body>
+			<section>
+				<aside>
+					<ol>
+						<li><img src="images/a2cc7cd98d1001e996039c7cb70e7bec54e79782.jpg" ></li>
+						<li><img src="images/111.jpg" ></li>
+						<li><img src="images/222.jpg" ></li>
+						<li><img src="images/fd039245d688d43f98330582721ed21b0ef43b23.jpg" ></li>
+						<li><img src="images/h1.jpg" ></li>
+						<li><img src="images/h2.jpg" ></li>
+						<li><img src="images/h3.jpg" ></li>
+						<li><img src="images/h4.jpg" ></li>
+						<li><img src="images/h5.jpg" ></li>
+					</ol>
+				</aside>
+				<a href="index.html" style="position: fixed; left: 48%; top: 750px;">返回主页面</a>
+			</section>
+		</body>
+</html>

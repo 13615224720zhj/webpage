@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>寡人的男团后宫</title>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<style type="text/css">
+			body {
+				background-color: burlywood;
+				;
+			}
+
+			#out {
+				background-color: white;
+			}
+
+			img[alt='...'] {
+				height: 800px;
+			}
+
+			img[alt='....'] {
+				height: 450px;
+			}
+
+			* {
+				transition: all 1s ease-out;
+			}
+
+			img[alt="Card image cap"] {
+				z-index: 0;
+			}
+
+			div[class="card-body text-center"] {
+				position: absolute;
+				opacity: 0;
+				z-index: 0;
+				top: 0px;
+				background: rgba(255, 255, 255, 0);
+			}
+
+			img[alt="Card image cap"]:hover {
+				transform: scale(1.2) translateY(-30px);
+				z-index: 3;
+				box-shadow: 15px 15px 15px black;
+			}
+
+			div[ class="card shadow mx-auto"]:hover div[class="card-body text-center"] {
+				opacity: 1;
+				transform: scale(1.2);
+				top: 220px;
+				z-index: 1;
+				box-shadow: 15px 15px 15px black;
+				background: rgba(255, 255, 255, 1);
+			}
+
+			div[style="width: 200px; height: 200px; border-radius: 100px;"]:hover h2 {
+				opacity: 0;
+			}
+
+			div[style="width: 200px; height: 200px; border-radius: 100px;"] h1 {
+				opacity: 0;
+				position: relative;
+				top: 0px;
+			}
+
+			div[style="width: 200px; height: 200px; border-radius: 100px;"]:hover h1 {
+				opacity: 1;
+				top: -120px;
+				transform: rotate(360deg);
+			}
+		</style>
+	</head>
+	<body>
+		<audio ref='audio' autoplay src="images/苍小天%20-%20魅夜的探戈.mp3">当前浏览器不支持audio</audio>
+		<div style="width: 1500px; background-color:  white; " class="mx-auto shadow">
+			<section id="out" style="width: 1400px;" class="mx-auto border-top">
+				<input type="button" onclick="onoff()" value="暂停" style="position: fixed; left: 90%; top: 80%;" />
+				<script>
+					var flag = true;
+					var audio = document.getElementsByTagName('audio')[0];
+					var btn = document.getElementsByTagName('input')[0];
+					var onoff = function() {
+						flag = !flag;
+						if (flag) {
+							audio.pause()
+							btn.value = '播放'
+						} else {
+							audio.play()
+							btn.value = '暂停'
+						}
+					}
+				</script>
+				<!-- nav -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 shadow" id="zero">
+	<a class="navbar-brand font-weight-bold" href="#">男 团 后 宫</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+	 aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="#end">页面底部<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#one">男友魔方</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#two">❤超级宠爱❤</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">
+					男友分类
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item font-weight-light" href="#tr">COS 男神</a>
+					<a class="dropdown-item font-weight-light" href="#tr">影视 男神</a>
+					<a class="dropdown-item font-weight-light" href="#tr">歌坛 男神</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+				<!-- nav -->
+
+				<!-- lunbo -->
+				
+
+				<!-- lunbo -->
+				<!-- jumbotron -->
+				<div class="bd-example mb-2">
+	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/huangjingxiang%20.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>黄靖翔</h5>
+					<p>平面模特，演员COSer</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/matianyu.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>马天宇</h5>
+					<p>这么牛逼的还用我介绍么</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/pubaojian.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>朴宝剑</h5>
+					<p>韩国男演员，主持人</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/wuyifan.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>吴亦凡</h5>
+					<p>哎你看这个面它又长又宽，你看这个碗，它又大又圆</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/xiaomeng.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>小梦</h5>
+					<p>知名COSer</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/xiaozhan.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>肖战</h5>
+					<p>中国著名演员歌手</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="images/xiongqi.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>熊祁</h5>
+					<p>反正很厉害</p>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+
+<div class="jumbotron text-center" id="one">
+	<h1 class="display-3">
+		<div class="spinner-grow text-danger" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>男友魔方<div class="spinner-grow text-danger" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</h1>
+	<p class="lead">你还是单身吗，你还在羡慕别人的爱情吗，你期望有一个宠你的男朋友吗，欢迎来到男友魔方，这里有你想要的类型哦！</p>
+	<hr class="my-4">
+	<p>你想要一个听话的男朋友吗，想要一个帅帅的男朋友吗，男友魔方值得你选择，一杯奶茶的钱值得你享受，点这里，有你想要的。</p>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="oneday.html" role="button"> 想 要 </a>
+	</p>
+</div>
+				<!-- jumbotron -->
+				<!--  -->
+				<div class="row mb-5">
+					<div class="col" id="tr">
+						<div class="card text-center mx-auto" style="border-color: white; width: 18rem;">
+							<div class="bg-light mx-auto overflow-hidden shadow" style="width: 200px; height: 200px; border-radius: 100px;">
+								<h2 style="margin-top: 80px;">男神</h2>
+								<a href="zl.html#hjx">
+									<h1 style="margin-top: 80px;">COS</h1>
+								</a>
+							</div>
+							<div class="card-body">
+								<p class="card-text">❤黄靖翔、小梦、熊祁❤</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card text-center mx-auto" style="border-color: white; width: 18rem;">
+							<div class="bg-light mx-auto  overflow-hidden shadow" style="width: 200px; height: 200px; border-radius: 100px;">
+								<h2 style="margin-top: 80px;">男神</h2>
+								<a href="zl.html#hjx">
+									<h1 style="margin-top: 80px;">影视</h1>
+								</a>
+							</div>
+							<div class="card-body">
+								<p class="card-text">❤吴亦凡、朴宝剑、肖战❤</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card text-center mx-auto" style="border-color: white; width: 18rem;">
+							<div class="bg-light mx-auto overflow-hidden shadow" style="width: 200px; height: 200px; border-radius: 100px;">
+								<h2 style="margin-top: 80px;">男神</h2>
+								<a href="zl.html#hjx">
+									<h1 style="margin-top: 80px;">歌坛</h1>
+								</a>
+							</div>
+							<div class="card-body">
+								<p class="card-text">❤马天宇、吴亦凡、肖战❤</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+				<!--  -->
+				<div class="row mb-3">
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/huangjingxiang%20.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">黄靖翔</h5>
+								<p class="card-text">黄靖翔（Nathaniel），1989年5月15日出生于贵州六盘水，中国平面模特、演员、coser。2013年8月2日，参与真人漫画《盗墓笔记》的实景拍摄；同年获得CHINAJOYCOSPLAY封面大赛最佳人气奖。2012年1月30日，出演纯爱电影《初恋备忘录》。2014年，获得ChinaJoy封面角色大赛银奖。2015年7月16日，出演网络剧《男神执事团》；同年获“微博十大影响力动漫大V”称号。2016年7月，出演网络电影《双程》。
+									2018年3月15日，主演的电影《同居男女异星汪》上映。</p>
+								<a href="zl.html#hjx" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/xiaomeng.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">小梦</h5>
+								<p class="card-text">小梦（原名李孟羲，1986年6月17日-），出生于四川省成都市，中国十大名coser之一，黑天视觉工作室化妆师。
+									2004年8月他参加湖南卫视《谁是英雄》节目。2011年获得ChinaJoy Cosplay封面大赛金奖。他参演的网剧作品《刺客列传2》《我的吸血鬼男友之极夜物语》等 。</p>
+								<a href="zl.html#lmx" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/xiongqi.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">熊祁</h5>
+								<p class="card-text">熊叔，北京的coser 只知道他姓祁 92年出生 174cm，微博：KUMAQI熊祁 贴吧：极地毛毛虫 绰号：熊叔、蠢熊 自称：本熊 本体：深山熊妖
+									Cosplay宣言：别忘了cos后面还有play玩的，开心就好。</p>
+								<a href="zl.html#xq" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/wuyifan.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">吴亦凡</h5>
+								<p class="card-text">吴亦凡（Kris Wu，1990年11月06日-），出生于广东省广州市，加拿大籍华裔男演员、歌手。
+									在韩国出道，曾为韩国男子组合EXO成员及中国分队EXO-M队长，与SM娱乐解约后出演多部电影，开始演员生涯。2015年正式以solo歌手发行单曲《Bad
+									Girl》；后发行单曲《JULY》，开启嘻哈音乐之路。更凭单曲《Like That》，登上2018年Billboard Hot 100榜的第73位，打破华人歌手在榜的最佳纪录。</p>
+								<a href="zl.html#wyf" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row  mb-3">
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/pubaojian.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">朴宝剑</h5>
+								<p class="card-text">朴宝剑（Park Bo Gum），1993年6月16日出生于首尔，韩国男演员、主持人。
+									2011年参演电影《盲证》正式出道；2012年，参演喜剧电影《车警官》；2013年，出演电视剧《完美妈妈》；
+									2014年参演电视剧《真是好时节》、《明日如歌》；p>
+									<a href="zl.html#pbj" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/xiaozhan.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">肖战</h5>
+								<p class="card-text">肖战，1991年10月5日出生于重庆，中国内地男演员、歌手。 2015年，以选手
+									的身份参加浙江卫视才艺养成选秀节目《燃烧吧少年》。</p>
+								<a href="zl.html#xz" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/matianyu.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">马天宇</h5>
+								<p class="card-text">马天宇（Ray Ma，1986年7月12日-），出生于山东省德州市，
+									毕业于北京电影学院，中国内地男演员、歌手。2006年，参加“加油！好男儿”获全国总决
+									赛第六名、全国网络人气冠军，正式出道。</p>
+								<a href="zl.html#mty" class="btn btn-primary">我要看他</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow mx-auto" style="width: 18rem;">
+							<img class="card-img-top rounded-lg" src="images/xiaozhan.jpg" alt="Card image cap">
+							<div class="card-body text-center">
+								<h5 class="card-title">更多男神</h5>
+								<p class="card-text">你想要一个听话的男朋友吗，想要一个帅帅的男朋友吗，一日男友值得你选择，一杯奶茶的钱值得你享受，点这里，有你想要的。</p>
+								<a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%C4%D0%C9%F1&fr=ala&ala=1&alatpl=adress&pos=0&hs=2&xthttps=111111"
+								 class="btn btn-primary">了解更多</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+				<!-- 超级宠爱 -->
+				<!-- Image and text -->
+				<nav class="navbar navbar-light bg-light my-2" id="two">
+					<a class="navbar-brand font-weight-bold" href="#">
+						<img src="images/333.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+						超级宠爱
+						<div class="spinner-grow text-danger" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>
+					</a>
+				</nav>
+
+				<div class="jumbotron jumbotron-fluid rounded-lg shadow" style="background: url(images/bg1.jpg);">
+					<div class="container">
+						<a href="bestboyfriend.html">
+							<h1 class="display-4 font-weight-bold font-italic"><span style="position: relative; top: -20px;">肖</span>战</h1>
+						</a>
+						<span class="lead font-weight-bold">
+							<span class="row ">
+								<span class='col-3'>中文名： 肖战</span>
+								<span class='col-3'>星座 ： 天秤座 </span>
+								<span class='col-3'>别名 ： 战战 </span>
+								<span class='col-3'>国籍 ： 中国</span>
+							</span>
+							<span class="row">
+								<span class='col-3'>性别 ： 男</span>
+								<span class='col-3'>职业 ： 歌手、演员</span>
+								<span class='col-6'>毕业院校 ： 重庆工商大学现代国际设计艺术学院</span>
+							</span>
+							<span class="row">
+								<span class='col-3'>所属组合 ： X玖少年团</span>
+								<span class='col-3'>身高 ： 183cm </span>
+								<span class='col-3'>出生地 ： 重庆</span>
+								<span class='col-3'>出生日期 ： 1991年10月05日</span>
+							</span>
+							<span class="row">
+								<span class='col-6'>代表作品 ： 超星星学园、哦！我的皇帝陛下、陈情令</span>
+								<span class='col-6'>经纪公司 ： 肖战个人工作室</span>
+							</span>
+							<span class="font-weight-normal">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;肖战从8岁时开始学画画，也曾学过小提琴。在重庆工
+								商大学就读期间，肖战在校合唱团内担任男生声部部长，
+								随合唱团参加过校内外文艺汇演，也曾得过重庆十佳歌手大奖、校园十佳歌手大奖等，是个文艺积极分子。
+								大二时，肖战和朋友成立设计工作室，接一些LOGO和VI设计的小活。同时，还跟朋友成立一个摄影工作室，
+								在工作室内担任主力摄影师。大学毕业后，肖战在一个传媒老师开的设计工作室里工作，是一名设计师。
+							</span>
+						</span>
+					</div>
+				</div>
+
+				<!-- 超级宠爱 -->
+				<!-- 绯闻 -->
+				<nav class="navbar navbar-light bg-light mb-2">
+					<a class="navbar-brand font-weight-bold mx-auto" href="feiwen.html">
+						男神绯闻重磅更新
+					</a>
+				</nav>
+				<div class="row">
+					<div class="col-6">
+						<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+										 aria-controls="collapseOne">
+											高泰宇的女友是谁 高泰宇黄靖翔真实关系曝光...
+										</button>
+									</h2>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body my-2">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+										提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+										 aria-expanded="false" aria-controls="collapseTwo">
+											她和马天宇传绯闻8年,出道10年不温不火,如今儿子出场圈粉无数...
+										</button>
+									</h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body my-2">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+										提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<h2 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+										 aria-expanded="false" aria-controls="collapseThree">
+											朴宝剑公司否认介入“双宋”婚姻,将通过法律纠正传闻...
+										</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body my-2">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+										提到高泰宇的女友，就不得不提一下黄靖翔，虽然两人都是人气颇高的男演员，但却也传过绯闻。因为两人曾经搭档出演同性恋题材的作品《双程》，演技爆棚，剧中配合的十分默契，所以让不少腐女都一位这两人也是一对恋人，事实上这也只是腐女的美好幻想而已，高泰宇黄靖翔只是两个普通的演员，而拥有者八块腹肌的高泰宇，简直就是一个直男。
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner shadow">
+								<div class="carousel-item active">
+									<img src="images/111.jpg" class="d-block w-100" alt="....">
+								</div>
+								<div class="carousel-item">
+									<img src="images/222.jpg" class="d-block w-100" alt="....">
+								</div>
+								<div class="carousel-item">
+									<img src="images/333.jpg" class="d-block w-100" alt="....">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- 绯闻 -->
+				<!-- 无奈的尾部导航 -->
+				<div id='end' class="row font-weight-light font-italic bg-light mt-2 rounded-top" style="height: 60px; line-height: 60px;">
+					<div class="col border-right text-center"><a href="#zero">返回首页</a></div>
+					<div class="col border-right text-center"><a href="#one">男友魔方</a></div>
+					<div class="col-2 border-right text-center"><a href="zl.html">资料大全</a></div>
+					<div class="col border-right text-center"><a href="#two">最佳男友</a></div>
+					<div class="col border-right text-center"><a href="com.html">诚邀合作</a></div>
+					<div class="col-3 text-center font-weight-bold"><a href="com.html">意見反饋</a></div>
+				</div>
+				<div class="row font-weight-light font-italic bg-light mt-2 rounded-top" style="height: 100px; line-height: 100px;">
+					<div class="col-5" style="font-size: 26px;">Copyright©<span style="font-size: 14px;">
+							2019-2021 南工院 移动1823 <b>张洪嘉</b>❤ 版权所有</span></div>
+					<div class="col-2"></div>
+					<div class="col text-right">联系我们 </div>
+					<div class="col-4">电话:13615224720 &nbsp;&nbsp;&nbsp;地址: <a href="http://www.niit.edu.cn/">南京工业职业技术学院</a></div>
+				</div>
+				<!-- 无奈啊无奈 -->
+			</section>
+		</div>
+	</body>
+</html>
